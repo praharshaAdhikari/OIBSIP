@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Open https://oneofthetodosever.vercel.app/ with your browser to see the result.
+Open https://oneofthetodosever.vercel.app with your browser to see the result.
