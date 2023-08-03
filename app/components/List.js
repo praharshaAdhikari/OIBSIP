@@ -44,7 +44,7 @@ const List = (props) => {
       <div className="flex justify-between items-end select-none">
         <span>
           <label htmlFor="sort" className="font-bold">Sort By | </label>
-          <select name="sort" id="sort" className="bg-transparent outline-none">
+          <select name="sort" id="sort" className="bg-transparent outline-none cursor-pointer">
             <option className="bg-main"> Due Date [ Ascending ] </option>
             <option className="bg-main"> Due Date [ Descending ] </option>
           </select>

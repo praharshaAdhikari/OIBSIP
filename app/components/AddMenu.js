@@ -15,7 +15,6 @@ const AddMenu = (props) => {
       [e.target.name] : e.target.value,
     })
   };
-  // BFAC-B613
   const handleAddItem = ()=> {
     if (taskInput.task === "") return;
     props.handleTasksList(taskInput);
@@ -51,7 +50,7 @@ const AddMenu = (props) => {
               type="date"
               name="dueDate"
               className="w-full bg-main border-slate-500 border-2 py-2 px-2 rounded-md text-white outline-none focus:border-white duration-200"
-              // min={new Date().toISOString().substring(0, 10)}
+              min={new Date().toISOString().substring(0, 10)}
               value={taskInput.dueDate}
               onChange={(e)=>handleInputChange(e)}
             />

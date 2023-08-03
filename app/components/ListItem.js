@@ -8,7 +8,7 @@ const ListItem = (props) => {
   const bgColor = props.status===0 ? "bg-completed" : props.status===1 ? "bg-due" : props.status===2 ? "bg-missed" : "";
   const textColor = props.status===0 ? "text-completed" : props.status===1 ? "text-due" : props.status===2 ? "text-missed" : "";
   return (
-    <div className="px-6 py-3 flex justify-between items-center first:mt-3 last:mb-3 select-none hover:bg-theme hover:bg-opacity-50" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
+    <div className="px-6 py-3 flex justify-between items-center first:mt-3 last:mb-3 select-none hover:bg-theme hover:bg-opacity-50 duration-200" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
       <div className="flex justify-between gap-3 items-center">
         <div className = {`w-3 h-3 rounded-[50%] ${bgColor}`}></div>
         <p>{props.task}</p>
